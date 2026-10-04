@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+  min-width: 0;
+  padding: clamp(20px, 5vw, 40px);
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 28px;
+  font-size: clamp(24px, 5vw, 32px);
+  text-align: center;
+}
+
+.task-field {
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.start-button {
+  background-color: #15803d;
+}
+
+.stop-button {
+  background-color: #374151;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input:disabled {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.error-message {
+  margin: 8px 0 0;
+  color: #b91c1c;
+}
+
+.storage-error {
+  margin: 0 0 16px;
+  overflow-wrap: anywhere;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+.elapsed-time {
+  margin: 24px 0;
+  font-family: ui-monospace, monospace;
+  font-size: clamp(32px, 10vw, 64px);
+  font-weight: 700;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.today-records {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+}
+
+.today-total {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.empty-records {
+  margin: 0 0 20px;
+  color: #4b5563;
+}
+
+.record-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.record-item {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.record-name {
+  margin: 0 0 8px;
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+
+.record-details {
+  margin: 4px 0 0;
+  color: #4b5563;
+  font-variant-numeric: tabular-nums;
+}
+
+.delete-button {
+  width: auto;
+  max-width: 100%;
+  min-height: 44px;
+  margin: 12px 0 0 auto;
+  padding: 8px 16px;
+  border: 1px solid #b91c1c;
+  background-color: #ffffff;
+  color: #b91c1c;
+  font-size: 16px;
+}
+
+.delete-button:hover {
+  background-color: #fef2f2;
+}

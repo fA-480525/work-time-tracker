@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作業時間記録</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>作業時間記録</h1>
+
+    <div class="task-field">
+      <label for="task-name">作業名</label>
+      <input type="text" id="task-name" name="task-name" aria-describedby="task-error">
+      <p id="task-error" class="error-message" role="alert" hidden></p>
+    </div>
+
+    <button type="button" class="start-button">開始</button>
+    <p class="elapsed-time">00:00:00</p>
+    <button type="button" class="stop-button" disabled>終了</button>
+
+    <section class="today-records" aria-labelledby="today-heading">
+      <h2 id="today-heading">今日の記録</h2>
+      <p id="storage-error" class="error-message storage-error" role="alert" hidden></p>
+      <p id="empty-records" class="empty-records">まだ記録がありません</p>
+      <ul id="record-list" class="record-list"></ul>
+      <p class="today-total">今日の合計：00:00:00</p>
+    </section>
+  </main>
+</body>
+</html>
